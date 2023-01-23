@@ -1,1 +1,2 @@
-yes
+#!/usr/bin/python3
+No

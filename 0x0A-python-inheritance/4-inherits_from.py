@@ -5,5 +5,5 @@
 def inherits_from(obj, a_class):
     """placeholder"""
     if type(obj) != a_class and issubclass(type(obj), a_class):
-        return true
-    return false
+        return True
+    return False

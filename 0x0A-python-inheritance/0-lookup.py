@@ -3,4 +3,5 @@
 
 
 def lookup(obj):
+    """placeholder"""
     return dir(obj)

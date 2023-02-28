@@ -5,7 +5,7 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    
+
     # Connecting to the database
     db = MySQLdb.connect(
         host="locolhost",
@@ -17,14 +17,14 @@ if __name__ == "__main__":
 
     # creating a cursor object
     cursor = db.cursor()
-    
+
     # Executing the query
     results = cursor.fetchall()
-    
+
     # Displaying the results
     for state in results:
         if state[0] <= 5:
             print(state)
-            
+
     # Closing the connection to the database
     db.close()

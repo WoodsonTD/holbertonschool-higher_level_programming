@@ -10,7 +10,6 @@ import sys
 
 
 if __name__ == "__main__":
-    if (0 <= index) and (index < len(list)):
     html = request.Request(sys.argv[1])
     with request.urlopen(html) as response:
         print(response.info()['X-Request-Id'])

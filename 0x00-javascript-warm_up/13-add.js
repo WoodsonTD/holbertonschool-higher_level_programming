@@ -1,3 +1,6 @@
 #!/usr/bin/node
-const add = require('./13-add').add;
-console.log(add(3, 4));
+exports.add = function (a, b) {
+  a = parseInt(a);
+  b = parseInt(b);
+  return a + b;
+};
